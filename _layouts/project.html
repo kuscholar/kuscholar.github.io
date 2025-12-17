@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="project">
+  <div class="wrapper">
+    <div class="page-header">
+      <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(0, 212, 170, 0.15); color: var(--accent-primary); border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">PROJECT</span>
+      <h1>{{ page.title | escape }}</h1>
+      {%- if page.description -%}
+        <p class="page-subtitle">{{ page.description }}</p>
+      {%- endif -%}
+    </div>
+    
+    <div class="project-content">
+      {{ content }}
+    </div>
+    
+    {%- if page.technologies -%}
+    <div class="card-tags" style="margin-top: 2rem;">
+      {%- for tech in page.technologies -%}
+        <span class="tag">{{ tech }}</span>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+    
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+      <a href="{{ '/projects/' | relative_url }}" class="btn btn-secondary">← Back to All Projects</a>
+    </div>
+  </div>
+</article>
+

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<article class="publication">
+  <div class="wrapper">
+    <div class="page-header">
+      {%- if page.type -%}
+        <span class="publication-type">{{ page.type }}</span>
+      {%- endif -%}
+      <h1>{{ page.title | escape }}</h1>
+      {%- if page.authors -%}
+        <p class="publication-authors">{{ page.authors }}</p>
+      {%- endif -%}
+      {%- if page.venue -%}
+        <p class="publication-venue">{{ page.venue }}</p>
+      {%- endif -%}
+    </div>
+    
+    <div class="publication-content">
+      {{ content }}
+    </div>
+    
+    {%- if page.doi -%}
+    <div style="margin-top: 2rem;">
+      <a href="https://doi.org/{{ page.doi }}" target="_blank" class="btn btn-primary">View Publication →</a>
+    </div>
+    {%- endif -%}
+    
+    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+      <a href="{{ '/publications/' | relative_url }}" class="btn btn-secondary">← Back to All Publications</a>
+    </div>
+  </div>
+</article>
+
