@@ -38,6 +38,11 @@ html {
   scroll-behavior: smooth;
 }
 
+// Anchor link scroll offset for fixed header
+section[id] {
+  scroll-margin-top: 100px;
+}
+
 body {
   font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg-primary);
@@ -100,6 +105,12 @@ body {
     margin-right: 0.5rem;
     color: var(--accent-primary);
   }
+}
+
+// Home link scrolls to top
+.site-title[href="#home"],
+.site-title[href="/"] {
+  cursor: pointer;
 }
 
 .site-nav {
