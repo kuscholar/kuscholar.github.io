@@ -41,12 +41,6 @@ title: Home
 <section id="about" class="section">
   <div class="wrapper">
 
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
-      I develop iOS applications for one of America's leading smart home security platforms. 
-      With an interdisciplinary background in Computer Science and Chemistry, I bring analytical 
-      rigor to building user-friendly features that leverage AI capabilities while optimizing 
-      app performance and reliability.
-    </p>
 
     <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Professional Experience</h3>
 
@@ -343,14 +337,6 @@ title: Home
         View Paper →
       </a>
     </div>
-
-    <p style="margin-top: 2rem; line-height: 1.8;">
-      My academic journey spans <strong>Chemistry</strong> and <strong>Computer Science</strong>, giving me a unique 
-      interdisciplinary perspective. During my Master's in Chemistry at Washington University in St. Louis, 
-      I conducted research that contributed to peer-reviewed publications. My Master's in Computer Science 
-      at The George Washington University focused on software engineering and mobile development, leading to 
-      my current career in iOS development.
-    </p>
   </div>
 </section>
 
