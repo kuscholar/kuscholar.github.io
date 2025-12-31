@@ -150,26 +150,23 @@ body {
 
 // Main content area
 .page-content {
-  padding-top: 100px;
+  padding-top: 80px;
   min-height: 100vh;
+}
+
+// Section spacing
+.section {
+  padding: 4rem 0;
+  
+  &.alt-bg {
+    background: var(--bg-secondary);
+  }
 }
 
 // Hero Section
 .hero {
-  padding: 6rem 0;
+  padding: 4rem 0;
   position: relative;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(0, 212, 170, 0.08) 0%, transparent 70%);
-    pointer-events: none;
-  }
 }
 
 .hero-content {
@@ -356,37 +353,7 @@ body {
   }
 }
 
-// Section Styling
-.section {
-  padding: 5rem 0;
-  
-  &.alt-bg {
-    background: var(--bg-secondary);
-  }
-}
 
-.section-header {
-  text-align: center;
-  margin-bottom: 4rem;
-  
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    letter-spacing: -0.02em;
-    
-    .accent {
-      color: var(--accent-primary);
-    }
-  }
-  
-  .section-subtitle {
-    font-size: 1.15rem;
-    color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
 
 // Cards
 .card {
@@ -677,8 +644,8 @@ body {
 // Contact Section
 .contact-section {
   text-align: center;
-  padding: 6rem 0;
-  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  padding: 4rem 0;
+  background: var(--bg-secondary);
 }
 
 .contact-links {
@@ -733,23 +700,27 @@ body {
   }
 }
 
-// Page headers
-.page-header {
-  padding: 4rem 0 3rem;
-  border-bottom: 1px solid var(--border-color);
-  margin-bottom: 4rem;
+// Section headers
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
   
-  h1 {
-    font-size: 3rem;
+  h2 {
+    font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
+    
+    .accent {
+      color: var(--accent-primary);
+    }
   }
   
-  .page-subtitle {
-    font-size: 1.2rem;
+  .section-subtitle {
+    font-size: 1.1rem;
     color: var(--text-secondary);
-    max-width: 700px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
