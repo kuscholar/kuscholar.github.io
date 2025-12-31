@@ -314,6 +314,36 @@ title: Home
       </a>
     </div>
 
+    <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Selected Publications</h3>
+
+    <div class="card" style="margin-bottom: 1.5rem;">
+      <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(14, 165, 233, 0.15); color: var(--accent-secondary); border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">arXiv Preprint</span>
+      <h3 class="card-title" style="margin-top: 0.5rem;">SETransformer: A hybrid attention-based architecture for robust human activity recognition</h3>
+      <p class="card-description" style="margin: 0.75rem 0;">
+        <strong>Y. Liu</strong>, <strong>X. Qin</strong>, Y. Gao, X. Li, C. Feng
+      </p>
+      <p style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; margin: 0.5rem 0;">
+        arXiv preprint arXiv:2505.19369, 2025
+      </p>
+      <a href="https://arxiv.org/abs/2505.19369" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">
+        View Paper →
+      </a>
+    </div>
+
+    <div class="card" style="margin-bottom: 1.5rem;">
+      <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(14, 165, 233, 0.15); color: var(--accent-secondary); border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">Journal Article</span>
+      <h3 class="card-title" style="margin-top: 0.5rem;">Saliency-Driven Multi-Scale Feature Discrepancy Fusion for Fine-Grained Video Anomaly Detection</h3>
+      <p class="card-description" style="margin: 0.75rem 0;">
+        <strong>X. Qin</strong>
+      </p>
+      <p style="color: var(--text-muted); font-size: 0.9rem; font-style: italic; margin: 0.5rem 0;">
+        INNO-PRESS: Journal of Emerging Applied AI, 1(1)
+      </p>
+      <a href="https://www.inno-press.com/index.php/JAAI/article/download/25/2" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">
+        View Paper →
+      </a>
+    </div>
+
     <p style="margin-top: 2rem; line-height: 1.8;">
       My academic journey spans <strong>Chemistry</strong> and <strong>Computer Science</strong>, giving me a unique 
       interdisciplinary perspective. During my Master's in Chemistry at Washington University in St. Louis, 
