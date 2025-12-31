@@ -4,14 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<div class="page-header">
-  <h1>About Me</h1>
-  <p class="page-subtitle">
-    A software engineer dedicated to building mobile applications that help 
-    protect American families through smart home security technology.
-  </p>
-</div>
-
 ## Professional Summary
 
 I am a **Software Engineer II** at **Wyze**, where I develop iOS applications for one of America's 

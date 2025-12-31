@@ -40,12 +40,6 @@ title: Home
 
 <section id="about" class="section">
   <div class="wrapper">
-    <div class="section-header">
-      <h2>About <span class="accent">Me</span></h2>
-      <p class="section-subtitle">
-        Software Engineer II at Wyze, specializing in iOS development for smart home security
-      </p>
-    </div>
 
     <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
       I develop iOS applications for one of America's leading smart home security platforms. 
@@ -351,8 +345,5 @@ title: Home
         📚 Google Scholar
       </a>
     </div>
-    <p style="color: var(--text-muted); margin-top: 2rem; font-size: 0.9rem;">
-      (314) 224-2715 • Available for calls during business hours
-    </p>
   </div>
 </section>
