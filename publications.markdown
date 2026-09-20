@@ -1,169 +1,62 @@
 ---
 layout: page
-title: Publications
+title: Research
 permalink: /publications/
+back_anchor: research
+description: Applied AI publications by Xukui Qin on human activity recognition and fine-grained video anomaly detection.
 ---
 
-<div class="page-header">
-  <h1>Publications & Research</h1>
+<header class="page-header">
+  <p class="section-kicker">Research</p>
+  <h1>Applied machine learning for signals and scenes.</h1>
   <p class="page-subtitle">
-    Academic research contributions indexed on Google Scholar.
+    My research focuses on extracting useful structure from wearable-sensor time series and
+    complex video—two settings where accuracy, context, and computational cost all matter.
   </p>
-</div>
+</header>
 
-<div class="highlight-box">
-  <h3>📚 Google Scholar Profile</h3>
-  <p>
-    View my complete publication record and citation metrics on Google Scholar.
-  </p>
-  <a href="https://scholar.google.com/citations?user=qBpKisAAAAAJ&hl=en" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
-    View Google Scholar Profile →
-  </a>
-</div>
-
----
-
-## Academic Background
-
-My academic journey spans two distinct fields—**Chemistry** and **Computer Science**—giving me 
-a unique interdisciplinary perspective on problem-solving and research methodology.
-
-<div class="card-grid" style="margin-top: 2rem;">
-  <div class="card">
-    <div class="card-icon">🔬</div>
-    <h3 class="card-title">Chemistry Research</h3>
-    <p class="card-description">
-      During my Master's in Chemistry at Washington University in St. Louis (2019-2021), 
-      I conducted research that contributed to peer-reviewed publications. This work 
-      developed my analytical skills and scientific rigor.
-    </p>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">💻</div>
-    <h3 class="card-title">Computer Science</h3>
-    <p class="card-description">
-      My Master's in Computer Science at The George Washington University (2021-2023) 
-      focused on software engineering and mobile development, leading to my current 
-      career in iOS development.
-    </p>
-  </div>
-</div>
-
----
-
-## Research Interests
-
-My current interests bridge my scientific background with software engineering:
-
-<div class="skills-grid" style="margin: 2rem 0;">
-  <div class="skill-category">
-    <h4>Current Focus</h4>
-    <div class="skill-list">
-      <span>Mobile Development</span>
-      <span>Smart Home Technology</span>
-      <span>User Experience</span>
-      <span>App Architecture</span>
+<div class="publication-list">
+  <article class="publication-entry">
+    <div class="publication-side">
+      <span class="research-index">01</span>
+      <span class="publication-type">Journal article · 2025</span>
     </div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Technical Interests</h4>
-    <div class="skill-list">
-      <span>iOS Development</span>
-      <span>Computer Vision</span>
-      <span>IoT Systems</span>
-      <span>Voice Interfaces</span>
-    </div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Scientific Background</h4>
-    <div class="skill-list">
-      <span>Chemistry</span>
-      <span>Chemical Biology</span>
-      <span>Data Analysis</span>
-      <span>Research Methods</span>
-    </div>
-  </div>
-</div>
-
----
-
-## Education & Research Training
-
-<div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-date">2021 — 2023</div>
-    <h3 class="timeline-title">M.S. Computer Science</h3>
-    <div class="timeline-company">The George Washington University | Washington, D.C.</div>
-    <div class="timeline-description">
+    <div>
+      <h2>SETransformer: A Hybrid Attention-Based Architecture for Robust Human Activity Recognition</h2>
+      <p class="publication-authors">Yunbo Liu, <strong>Xukui Qin</strong>, Yifan Gao, Xiang Li, Chengwei Feng</p>
+      <p class="publication-venue">INNO-PRESS: Journal of Emerging Applied AI, 1(1), 2025</p>
       <p>
-        Graduate studies in computer science with coursework in software engineering, 
-        mobile application development, and systems programming.
+        Combines Transformer temporal modeling, channel-wise squeeze-and-excitation, and learnable
+        attention pooling to identify human activities from triaxial accelerometer data.
       </p>
+      <div class="publication-links">
+        <a class="btn btn-primary" href="https://doi.org/10.65563/jeaai.v1i1.21" target="_blank" rel="noopener noreferrer">Journal article <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-secondary" href="https://arxiv.org/abs/2505.19369" target="_blank" rel="noopener noreferrer">arXiv</a>
+      </div>
     </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-date">2019 — 2021</div>
-    <h3 class="timeline-title">M.S. Chemistry</h3>
-    <div class="timeline-company">Washington University in St. Louis | St. Louis, MO</div>
-    <div class="timeline-description">
+  </article>
+
+  <article class="publication-entry">
+    <div class="publication-side">
+      <span class="research-index">02</span>
+      <span class="publication-type">Journal article · 2025</span>
+    </div>
+    <div>
+      <h2>Saliency-Driven Multi-Scale Feature Discrepancy Fusion for Fine-Grained Video Anomaly Detection</h2>
+      <p class="publication-authors"><strong>Xukui Qin</strong></p>
+      <p class="publication-venue">INNO-PRESS: Journal of Emerging Applied AI, 1(1), 2025</p>
       <p>
-        Graduate research in chemistry, developing expertise in analytical methods, 
-        experimental design, and scientific publication. Research contributions 
-        are indexed on Google Scholar.
+        Introduces a dynamic feature-enhancement framework that amplifies teacher–student feature
+        discrepancies to detect small-scale, transient anomalies across complex video scenes.
       </p>
+      <div class="publication-links">
+        <a class="btn btn-primary" href="https://doi.org/10.65563/jeaai.v1i1.25" target="_blank" rel="noopener noreferrer">Journal article <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-date">2015 — 2019</div>
-    <h3 class="timeline-title">B.S. Chemical Biology</h3>
-    <div class="timeline-company">Xiamen University | Xiamen, China</div>
-    <div class="timeline-description">
-      <p>
-        Undergraduate studies combining chemistry and biology, building a foundation 
-        in scientific methodology and interdisciplinary research.
-      </p>
-    </div>
-  </div>
+  </article>
 </div>
 
----
-
-## Professional Development
-
-In addition to academic publications, I continuously develop my skills through:
-
-<div class="card-grid">
-  <div class="card">
-    <div class="card-icon">📱</div>
-    <h3 class="card-title">iOS Development</h3>
-    <p class="card-description">
-      Ongoing learning in Swift, SwiftUI, and iOS best practices through 
-      hands-on development at Wyze and personal projects.
-    </p>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">🎓</div>
-    <h3 class="card-title">Technical Growth</h3>
-    <p class="card-description">
-      Continuous learning in software architecture, CI/CD practices, 
-      and emerging technologies in the smart home space.
-    </p>
-  </div>
-</div>
-
----
-
-<div style="text-align: center; margin-top: 3rem;">
-  <p style="color: var(--text-secondary);">
-    For a complete list of publications and citations, please visit my Google Scholar profile.
-  </p>
-  <a href="https://scholar.google.com/citations?user=qBpKisAAAAAJ&hl=en" target="_blank" class="btn btn-primary">
-    View Google Scholar →
-  </a>
-</div>
+<aside class="context-note">
+  <span class="meta-label">Complete record</span>
+  <p>Publication metadata and citation activity are maintained on <a href="https://scholar.google.com/citations?user=qBpKisAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>.</p>
+</aside>

@@ -3,14 +3,8 @@ source "https://rubygems.org"
 # Jekyll
 gem "jekyll", "~> 4.4.1"
 
-# Theme
-gem "minima", "~> 2.5"
-
-# Plugins
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-seo-tag"
-end
+# Plugins (metadata is rendered by the site's custom layout)
+gem "jekyll-seo-tag", require: false
 
 # Windows and JRuby compatibility
 platforms :mingw, :x64_mingw, :mswin, :jruby do

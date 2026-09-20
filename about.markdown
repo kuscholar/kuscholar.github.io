@@ -2,153 +2,96 @@
 layout: page
 title: About
 permalink: /about/
+back_anchor: about
+description: The interdisciplinary background and professional experience of iOS software engineer Xukui (Kusch) Qin.
 ---
 
-## Professional Summary
-
-I am a **Software Engineer II** at **Wyze**, where I develop iOS applications for one of America's 
-leading smart home security platforms. My work enables millions of users to monitor their homes, 
-receive intelligent alerts, and control security devices from their mobile devices.
-
-With a unique interdisciplinary background spanning **Computer Science** and **Chemistry**, I bring 
-analytical rigor and problem-solving skills to mobile development. I specialize in building 
-user-friendly features that leverage AI capabilities while optimizing app performance and reliability.
-
-<div class="highlight-box">
-  <h3>🎯 What I Do</h3>
-  <p>
-    I build iOS features that make smart home security more accessible, intelligent, and reliable 
-    for everyday Americans. From AI-powered face recognition to optimized video search, my work 
-    helps families stay connected to their homes and feel safer.
+<header class="page-header">
+  <p class="section-kicker">About</p>
+  <h1>Engineering with a scientist’s curiosity.</h1>
+  <p class="page-subtitle">
+    I’m an iOS-focused software engineer with a background in computer science, chemistry,
+    and research. I care about clear product thinking, durable systems, and the details that
+    help technology earn trust.
   </p>
-</div>
+</header>
 
----
+<div class="profile-layout">
+  <aside class="profile-summary">
+    <p class="meta-label">Current focus</p>
+    <h2>Connected products and applied intelligence.</h2>
+    <dl class="fact-list">
+      <div><dt>Role</dt><dd>Software Engineer II, Wyze</dd></div>
+      <div><dt>Based in</dt><dd>Philadelphia, Pennsylvania</dd></div>
+      <div><dt>Primary stack</dt><dd>Swift, Objective-C, UIKit, SwiftUI</dd></div>
+      <div><dt>Research</dt><dd>Sensor intelligence and video understanding</dd></div>
+    </dl>
+  </aside>
 
-## Professional Experience
+  <div class="prose-content">
+    <h2>How I work</h2>
+    <p>
+      My route into software was not linear. Training in chemistry taught me to form a useful
+      hypothesis, isolate variables, and let evidence change my mind. Software engineering gave
+      me a new medium for that mindset—one where careful decisions can improve an experience for
+      people every day.
+    </p>
+    <p>
+      At Wyze, I’ve contributed to consumer smart-home experiences including Friendly Faces,
+      Video Search, and Descriptive Alerts. My work spans interface implementation, app
+      architecture, data flow, caching, testing, and release tooling. I’m at my best when a problem
+      needs both product judgment and systems thinking.
+    </p>
+    <p>
+      I also authored or co-authored two applied AI papers in 2025, covering wearable-sensor human
+      activity recognition and fine-grained video anomaly detection. Research keeps me close to
+      first principles; product work keeps those ideas accountable to real constraints.
+    </p>
 
-<div class="timeline">
-  <div class="timeline-item">
-    <div class="timeline-date">Nov 2024 — Present</div>
-    <h3 class="timeline-title">Software Engineer II</h3>
-    <div class="timeline-company">Wyze | United States</div>
-    <div class="timeline-description">
-      <p>Senior iOS developer focusing on architecture improvements and feature development.</p>
-      <ul>
-        <li>Refactored view-model management and introduced a <strong>modern repository pattern</strong> to improve caching and data handling, reducing network calls and cutting cloud costs</li>
-        <li>Enhanced <strong>Video Search</strong> functionality by building per-device settings, refining the results interface with interactive filters and feedback prompts, and resolving event-access and pagination issues</li>
-        <li>Improved <strong>Descriptive Alerts</strong> UI components for clearer, context-rich event descriptions</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-date">May 2023 — Oct 2024</div>
-    <h3 class="timeline-title">Software Engineer</h3>
-    <div class="timeline-company">Wyze | United States</div>
-    <div class="timeline-description">
-      <p>Core iOS developer working on AI-powered features and infrastructure improvements.</p>
-      <ul>
-        <li>Developed the <strong>Friendly Faces</strong> experience, including event-filter UIs and registration/detail/edit flows, and optimized caching for improved stability</li>
-        <li>Worked on the foundational <strong>Chatbot framework</strong> and <strong>Automatic Speech Recognition</strong> proofs-of-concept, integrated streaming APIs and evaluated voice-driven interactions</li>
-        <li>Improved the <strong>CI/CD pipeline</strong> by adding a Firebase Debug View workflow, expanding automated test coverage, and resolving build-machine issues to support reliable releases</li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="timeline-item">
-    <div class="timeline-date">May 2022 — May 2023</div>
-    <h3 class="timeline-title">Software Engineer Intern</h3>
-    <div class="timeline-company">Wyze | United States</div>
-    <div class="timeline-description">
-      <p>iOS development intern contributing to product launches and feature development.</p>
-      <ul>
-        <li>Implemented new iOS features and addressed <strong>~30 bugs</strong> for the <strong>Roku × Wyze integration</strong>, supporting a smooth product launch</li>
-        <li>Developed the <strong>Wyze Cam Plus Pro</strong> rule-editing interface, aiding growth in paid-subscription uptake</li>
-        <li>Internationalized the iOS app by converting hard-coded UI strings to translatable identifiers (Objective-C/Swift), enabling <strong>Japanese localization</strong></li>
-      </ul>
-    </div>
+    <blockquote>
+      Music is the other thread running through my life—a reminder that precision and feeling can
+      belong in the same piece of work.
+    </blockquote>
   </div>
 </div>
 
----
-
-## Education
-
-<div class="card" style="margin-bottom: 1.5rem;">
-  <h3 class="card-title">Master of Science in Computer Science</h3>
-  <p style="color: var(--accent-primary); margin-bottom: 0.5rem;">The George Washington University</p>
-  <p style="color: var(--text-muted); font-size: 0.9rem;">Washington, D.C. | 2021 — 2023</p>
-  <p class="card-description" style="margin-top: 1rem;">
-    Graduate studies in computer science with focus on software engineering and mobile development.
-  </p>
-</div>
-
-<div class="card" style="margin-bottom: 1.5rem;">
-  <h3 class="card-title">Master of Science in Chemistry</h3>
-  <p style="color: var(--accent-primary); margin-bottom: 0.5rem;">Washington University in St. Louis</p>
-  <p style="color: var(--text-muted); font-size: 0.9rem;">St. Louis, MO | 2019 — 2021</p>
-  <p class="card-description" style="margin-top: 1rem;">
-    Graduate research in chemistry, developing strong analytical and problem-solving skills 
-    that translate to software engineering.
-  </p>
-</div>
-
-<div class="card">
-  <h3 class="card-title">Bachelor of Science in Chemical Biology</h3>
-  <p style="color: var(--accent-primary); margin-bottom: 0.5rem;">Xiamen University</p>
-  <p style="color: var(--text-muted); font-size: 0.9rem;">Xiamen, China | 2015 — 2019</p>
-  <p class="card-description" style="margin-top: 1rem;">
-    Undergraduate studies combining chemistry and biology, building a foundation in 
-    scientific methodology and research.
-  </p>
-</div>
-
----
-
-## Technical Skills
-
-<div class="skills-grid">
-  <div class="skill-category">
-    <h4>Programming Languages</h4>
-    <div class="skill-list">
-      <span>Swift</span>
-      <span>Objective-C</span>
-      <span>Ruby</span>
-      <span>YAML</span>
-      <span>Bash</span>
-    </div>
+<section class="page-section">
+  <p class="section-kicker">Career progression</p>
+  <h2>Wyze</h2>
+  <div class="timeline">
+    <article class="timeline-item">
+      <div class="timeline-date">Nov 2024 — Present</div>
+      <h3 class="timeline-title">Software Engineer II</h3>
+      <div class="timeline-company">iOS · Wyze</div>
+      <div class="timeline-description">
+        <p>Contributes to product and architecture work across video discovery, alert experiences, caching, and data access.</p>
+      </div>
+    </article>
+    <article class="timeline-item">
+      <div class="timeline-date">May 2023 — Oct 2024</div>
+      <h3 class="timeline-title">Software Engineer</h3>
+      <div class="timeline-company">iOS · Wyze</div>
+      <div class="timeline-description">
+        <p>Built AI-assisted customer experiences and improved testing, analytics validation, and continuous delivery.</p>
+      </div>
+    </article>
+    <article class="timeline-item">
+      <div class="timeline-date">May 2022 — May 2023</div>
+      <h3 class="timeline-title">Software Engineer Intern</h3>
+      <div class="timeline-company">iOS · Wyze</div>
+      <div class="timeline-description">
+        <p>Contributed to Roku integration, Cam Plus Pro, launch quality, and Japanese localization.</p>
+      </div>
+    </article>
   </div>
-  
-  <div class="skill-category">
-    <h4>iOS Development</h4>
-    <div class="skill-list">
-      <span>SwiftUI</span>
-      <span>UIKit</span>
-      <span>Xcode</span>
-      <span>Cocoapods</span>
-      <span>TestFlight</span>
-    </div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Tools & Practices</h4>
-    <div class="skill-list">
-      <span>Git</span>
-      <span>CI/CD</span>
-      <span>Firebase</span>
-    </div>
-  </div>
-  
-  <div class="skill-category">
-    <h4>Additional Skills</h4>
-    <div class="skill-list">
-      <span>Python</span>
-      <span>C#</span>
-      <span>Unity</span>
-      <span>Arduino</span>
-    </div>
-  </div>
-</div>
+</section>
 
----
+<section class="page-section">
+  <p class="section-kicker">Education</p>
+  <h2>Three disciplines, one practice.</h2>
+  <div class="education-list">
+    <div><span>2021 — 2023</span><strong>M.S. Computer Science</strong><p>The George Washington University</p></div>
+    <div><span>2019 — 2021</span><strong>M.S. Chemistry</strong><p>Washington University in St. Louis</p></div>
+    <div><span>2015 — 2019</span><strong>B.S. Chemical Biology</strong><p>Xiamen University</p></div>
+  </div>
+</section>

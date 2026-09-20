@@ -4,7 +4,7 @@ layout: default
 
 <article class="page">
   <div class="wrapper">
+    <a class="back-link" href="{{ '/' | relative_url }}{% if page.back_anchor %}#{{ page.back_anchor }}{% endif %}"><span aria-hidden="true">←</span> Back to portfolio</a>
     {{ content }}
   </div>
 </article>
-

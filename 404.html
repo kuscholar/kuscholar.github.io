@@ -2,19 +2,18 @@
 layout: default
 title: Page Not Found
 permalink: /404.html
+noindex: true
+description: The requested page could not be found.
 ---
 
-<section class="section" style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-  <div class="wrapper" style="text-align: center;">
-    <h1 style="font-size: 8rem; margin-bottom: 0; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-family: 'IBM Plex Mono', monospace;">404</h1>
-    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Page Not Found</h2>
-    <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
-      The page you're looking for doesn't exist or has been moved. 
-      Let's get you back on track.
-    </p>
-    <div class="cta-group" style="justify-content: center;">
-      <a href="/" class="btn btn-primary">← Back to Home</a>
-      <a href="/contact/" class="btn btn-secondary">Contact Me</a>
+<section class="error-page">
+  <div class="wrapper error-inner">
+    <p class="error-code">404</p>
+    <h1>That page has moved—or never existed.</h1>
+    <p>The useful parts are still here. Head back to the portfolio or start a conversation.</p>
+    <div class="cta-group">
+      <a href="{{ '/' | relative_url }}" class="btn btn-primary"><span aria-hidden="true">←</span> Back to portfolio</a>
+      <a href="mailto:{{ site.email }}" class="btn btn-secondary">Email Kusch</a>
     </div>
   </div>
 </section>

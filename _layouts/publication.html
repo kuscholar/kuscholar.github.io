@@ -2,8 +2,9 @@
 layout: default
 ---
 
-<article class="publication">
+<article class="page publication">
   <div class="wrapper">
+    <a class="back-link" href="{{ '/' | relative_url }}#research"><span aria-hidden="true">←</span> Back to portfolio</a>
     <div class="page-header">
       {%- if page.type -%}
         <span class="publication-type">{{ page.type }}</span>
@@ -22,14 +23,13 @@ layout: default
     </div>
     
     {%- if page.doi -%}
-    <div style="margin-top: 2rem;">
-      <a href="https://doi.org/{{ page.doi }}" target="_blank" class="btn btn-primary">View Publication →</a>
+    <div class="page-actions">
+      <a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Publication <span aria-hidden="true">↗</span></a>
     </div>
     {%- endif -%}
     
-    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+    <div class="page-actions">
       <a href="{{ '/publications/' | relative_url }}" class="btn btn-secondary">← Back to All Publications</a>
     </div>
   </div>
 </article>
-

@@ -1,49 +1,32 @@
-# ============================================
-# KUSCH QIN - SOFTWARE ENGINEER
-# Smart Home Security & iOS Development
-# Portfolio for NIW Application
-# ============================================
-
-# Site Settings
-title: "Kusch Qin | Software Engineer"
+title: "Xukui (Kusch) Qin"
 email: kuschqin@gmail.com
+lang: en
 description: >-
-  Software Engineer specializing in iOS development for smart home security applications. 
-  Building features that enhance home protection and user experience for millions of 
-  American households through innovative mobile solutions.
+  Software Engineer II at Wyze focused on iOS product development, app architecture,
+  and applied AI research in human activity recognition and video anomaly detection.
 
 baseurl: ""
 url: "https://kuscholar.github.io"
+social_image: "/assets/images/kusch-qin-social-card.png"
 
 # Professional Profile
 author:
-  name: "Kusch Qin"
+  name: "Xukui (Kusch) Qin"
   title: "Software Engineer II"
   company: "Wyze"
-  specialization: "iOS Development & Smart Home Security"
-  location: "United States"
+  specialization: "iOS Software Engineering & Applied AI Research"
+  location: "Philadelphia, Pennsylvania"
 
 # Social & Professional Links
 github_username: kuscholar
 linkedin_username: kusch-qin
 google_scholar_id: qBpKisAAAAAJ
 
-# Build Settings
-theme: minima
 markdown: kramdown
 highlighter: rouge
 
-# Plugins
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
-
-# Navigation
-header_pages:
-  - about.markdown
-  - projects.markdown
-  - publications.markdown
-  - contact.markdown
 
 # Collections for structured content
 collections:
@@ -85,3 +68,4 @@ exclude:
   - node_modules/
   - vendor/
   - README.md
+  - .gstack/

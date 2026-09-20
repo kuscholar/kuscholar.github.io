@@ -1,297 +1,71 @@
 ---
 layout: page
-title: Projects
+title: Selected Work
 permalink: /projects/
+back_anchor: work
+description: Selected iOS product, architecture, and delivery work by Xukui (Kusch) Qin at Wyze.
 ---
 
-<div class="page-header">
-  <h1>Projects & Contributions</h1>
+<header class="page-header">
+  <p class="section-kicker">Selected work</p>
+  <h1>Building the product—and the system behind it.</h1>
   <p class="page-subtitle">
-    Professional work and personal projects demonstrating expertise in iOS development, 
-    smart home technology, and software engineering.
+    A concise view of my work on the Wyze iOS app. Product details remain intentionally
+    high-level to respect customer privacy and company confidentiality.
   </p>
+</header>
+
+<div class="detail-grid">
+  <article class="detail-card">
+    <span class="project-index">01 · Video discovery</span>
+    <h2>Video Search</h2>
+    <p>Expanded search with per-device settings, interactive filters, feedback flows, and more dependable event access and pagination.</p>
+    <ul>
+      <li>Turned a complex search surface into a more controllable, device-aware experience.</li>
+      <li>Improved edge-case handling across loading, access, and paginated results.</li>
+      <li>Created clearer feedback loops between customers and the evolving search system.</li>
+    </ul>
+    <div class="work-tags"><span>Swift</span><span>Search UX</span><span>Pagination</span></div>
+  </article>
+
+  <article class="detail-card">
+    <span class="project-index">02 · Intelligent events</span>
+    <h2>Friendly Faces &amp; Descriptive Alerts</h2>
+    <p>Built interfaces that help customers manage recognized faces and understand richer, AI-generated event context.</p>
+    <ul>
+      <li>Delivered face registration, profile detail, editing, and event-filter experiences.</li>
+      <li>Refined alert components for clarity and scannability.</li>
+      <li>Improved cache behavior around frequently used face data.</li>
+    </ul>
+    <div class="work-tags"><span>UIKit</span><span>Applied AI</span><span>State</span></div>
+  </article>
+
+  <article class="detail-card">
+    <span class="project-index">03 · App architecture</span>
+    <h2>Repository-based data flow</h2>
+    <p>Introduced a clearer boundary between view models and data access to make feature behavior easier to reason about and evolve.</p>
+    <ul>
+      <li>Centralized caching and data-fetching decisions behind reusable interfaces.</li>
+      <li>Reduced redundant network activity and its associated cloud cost.</li>
+      <li>Simplified state ownership for product features using the shared layer.</li>
+    </ul>
+    <div class="work-tags"><span>Architecture</span><span>Caching</span><span>Performance</span></div>
+  </article>
+
+  <article class="detail-card">
+    <span class="project-index">04 · Engineering systems</span>
+    <h2>Release quality</h2>
+    <p>Strengthened the path from development to production through better automated coverage, analytics validation, and build reliability.</p>
+    <ul>
+      <li>Added a Firebase DebugView workflow for earlier analytics validation.</li>
+      <li>Expanded automated tests around customer-facing behavior.</li>
+      <li>Resolved recurring build-machine problems that disrupted release work.</li>
+    </ul>
+    <div class="work-tags"><span>CI/CD</span><span>Firebase</span><span>Testing</span></div>
+  </article>
 </div>
 
-## Professional Work at Wyze
-
-<div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent-primary);">
-  <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(0, 212, 170, 0.15); color: var(--accent-primary); border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;">CURRENT ROLE</span>
-  <h3 class="card-title">Wyze iOS Application</h3>
-  <p class="card-description">
-    Core iOS developer for one of America's leading smart home security platforms, 
-    serving millions of active users and controlling a wide range of connected devices 
-    including cameras, sensors, locks, and smart home accessories.
-  </p>
-  
-  <div class="card-tags">
-    <span class="tag">Swift</span>
-    <span class="tag">Objective-C</span>
-    <span class="tag">SwiftUI</span>
-    <span class="tag">Xcode</span>
-    <span class="tag">Cocoapods</span>
-    <span class="tag">TestFlight</span>
-  </div>
-</div>
-
----
-
-## Featured Wyze Projects
-
-<div class="card-grid">
-  <div class="card">
-    <div class="card-icon">👤</div>
-    <h3 class="card-title">Friendly Faces</h3>
-    <p class="card-description">
-      Developed the complete Friendly Faces experience for facial recognition 
-      in security camera alerts. Built event-filter UIs, registration flows, 
-      detail views, and edit functionality.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">KEY CONTRIBUTIONS</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>Event-filter UI for face-based alert filtering</li>
-      <li>Face registration and management flows</li>
-      <li>Optimized caching for improved stability</li>
-      <li>Detail and edit interfaces for face profiles</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">Swift</span>
-      <span class="tag">Face Recognition</span>
-      <span class="tag">Caching</span>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">🔍</div>
-    <h3 class="card-title">Video Search Enhancement</h3>
-    <p class="card-description">
-      Enhanced Video Search functionality with per-device settings, refined 
-      results interface with interactive filters, feedback prompts, and 
-      resolved event-access and pagination issues.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">KEY CONTRIBUTIONS</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>Per-device search settings</li>
-      <li>Interactive filters for refined results</li>
-      <li>Improved pagination handling</li>
-      <li>User feedback prompt integration</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">Swift</span>
-      <span class="tag">Search</span>
-      <span class="tag">UX</span>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">🔔</div>
-    <h3 class="card-title">Descriptive Alerts</h3>
-    <p class="card-description">
-      Improved Descriptive Alerts UI components for clearer, context-rich 
-      event descriptions that help users quickly understand what triggered 
-      their security notifications.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">KEY CONTRIBUTIONS</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>Enhanced alert UI components</li>
-      <li>Context-rich event descriptions</li>
-      <li>Improved notification clarity</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">Swift</span>
-      <span class="tag">UI/UX</span>
-      <span class="tag">Notifications</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-icon">🤖</div>
-    <h3 class="card-title">Chatbot & ASR Framework</h3>
-    <p class="card-description">
-      Worked on the foundational Chatbot framework and Automatic Speech 
-      Recognition (ASR) proofs-of-concept, integrating streaming APIs and 
-      evaluating voice-driven interactions.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">KEY CONTRIBUTIONS</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>Chatbot framework foundation</li>
-      <li>Speech recognition POC</li>
-      <li>Streaming API integration</li>
-      <li>Voice interaction evaluation</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">Swift</span>
-      <span class="tag">ASR</span>
-      <span class="tag">Streaming</span>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">📺</div>
-    <h3 class="card-title">Roku × Wyze Integration</h3>
-    <p class="card-description">
-      Implemented iOS features and resolved ~30 bugs for the Roku × Wyze 
-      integration, enabling users to view their Wyze camera feeds directly 
-      on Roku devices.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">KEY CONTRIBUTIONS</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>New iOS integration features</li>
-      <li>~30 bug fixes for smooth launch</li>
-      <li>Cross-platform compatibility</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">Swift</span>
-      <span class="tag">Roku</span>
-      <span class="tag">Integration</span>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">⚙️</div>
-    <h3 class="card-title">Wyze Cam Plus Pro</h3>
-    <p class="card-description">
-      Developed the Wyze Cam Plus Pro rule-editing interface, enabling 
-      users to customize their camera settings and automation rules for 
-      the premium subscription service.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">KEY CONTRIBUTIONS</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>Rule-editing interface design</li>
-      <li>Premium feature integration</li>
-      <li>Subscription flow support</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">Swift</span>
-      <span class="tag">Subscriptions</span>
-      <span class="tag">UI/UX</span>
-    </div>
-  </div>
-</div>
-
----
-
-## Infrastructure & Architecture
-
-<div class="card-grid">
-  <div class="card">
-    <div class="card-icon">🏗️</div>
-    <h3 class="card-title">Repository Pattern Architecture</h3>
-    <p class="card-description">
-      Refactored view-model management and introduced a modern repository 
-      pattern to improve caching and data handling, resulting in reduced 
-      network calls and cloud cost savings.
-    </p>
-    <div class="card-tags">
-      <span class="tag">Architecture</span>
-      <span class="tag">Caching</span>
-      <span class="tag">Performance</span>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">🔄</div>
-    <h3 class="card-title">CI/CD Pipeline Improvements</h3>
-    <p class="card-description">
-      Enhanced the CI/CD pipeline by adding Firebase Debug View workflow, 
-      expanding automated test coverage, and resolving build-machine issues 
-      to support reliable releases.
-    </p>
-    <div class="card-tags">
-      <span class="tag">CI/CD</span>
-      <span class="tag">Firebase</span>
-      <span class="tag">Testing</span>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">🌍</div>
-    <h3 class="card-title">iOS Internationalization</h3>
-    <p class="card-description">
-      Internationalized the Wyze iOS app by converting hard-coded UI strings 
-      to translatable identifiers in Objective-C and Swift, enabling 
-      Japanese localization and global expansion.
-    </p>
-    <div class="card-tags">
-      <span class="tag">i18n</span>
-      <span class="tag">Objective-C</span>
-      <span class="tag">Swift</span>
-    </div>
-  </div>
-</div>
-
----
-
-## Personal Projects
-
-<div class="card-grid">
-  <div class="card">
-    <div class="card-icon">📦</div>
-    <h3 class="card-title">Mail Package Protection System</h3>
-    <p class="card-description">
-      Designed an IoT-based security system to protect mail packages from theft—
-      a growing problem for American households. Combines sensors, cameras, and 
-      automated notifications.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">TECHNICAL DETAILS</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>Pressure-activated IoT device using Arduino and Raspberry Pi</li>
-      <li>Force sensor triggers camera capture and HTTP requests</li>
-      <li>Automatic email delivery with security images</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">Python</span>
-      <span class="tag">C</span>
-      <span class="tag">Arduino</span>
-      <span class="tag">Raspberry Pi</span>
-      <span class="tag">IoT</span>
-    </div>
-    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">Oct 2021 — Dec 2021</p>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">🐦</div>
-    <h3 class="card-title">TwitterLite</h3>
-    <p class="card-description">
-      Developed a social media application using Swift with Twitter API, 
-      providing a comparable experience to Twitter with core functionality.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">FEATURES</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>Post data requests and display using table views</li>
-      <li>Infinite scrolling for past posts</li>
-      <li>Like, tweet, and retweet functionality</li>
-      <li>Twitter account integration</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">Swift</span>
-      <span class="tag">Xcode</span>
-      <span class="tag">Twitter API</span>
-    </div>
-    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">Feb 2022 — Apr 2022</p>
-  </div>
-  
-  <div class="card">
-    <div class="card-icon">🥽</div>
-    <h3 class="card-title">In-Building VR Navigation Simulator</h3>
-    <p class="card-description">
-      Developed a virtual reality-based in-building exploring simulator for 
-      The George Washington University campus.
-    </p>
-    <h4 style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">FEATURES</h4>
-    <ul style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7;">
-      <li>UI design with audio/text instructions</li>
-      <li>Teleport and hand-tracking with 6DOF</li>
-      <li>3D scanned GWU building imported into Unity</li>
-      <li>Real environment reconstruction in VR</li>
-    </ul>
-    <div class="card-tags">
-      <span class="tag">C#</span>
-      <span class="tag">Unity</span>
-      <span class="tag">VR</span>
-      <span class="tag">3D Scanning</span>
-    </div>
-    <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">Jan 2022 — Mar 2022</p>
-  </div>
-</div>
-
----
+<aside class="context-note">
+  <span class="meta-label">Earlier product work</span>
+  <p>I also contributed to the Roku × Wyze integration, Cam Plus Pro rule editing, Japanese localization, and early chatbot and speech-recognition prototypes.</p>
+</aside>

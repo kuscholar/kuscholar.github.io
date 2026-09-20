@@ -1,0 +1,10 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign indexed_pages = site.pages | where_exp: "item", "item.noindex != true" %}
+  {% for item in indexed_pages %}{% if item.url == '/' or item.url contains '/about/' or item.url contains '/projects/' or item.url contains '/publications/' or item.url contains '/contact/' %}
+  <url><loc>{{ item.url | absolute_url | xml_escape }}</loc></url>
+  {% endif %}{% endfor %}
+</urlset>

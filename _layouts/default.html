@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
+  {%- assign meta_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 -%}
+  {%- capture meta_title -%}{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}{%- endcapture -%}
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- SEO Meta Tags -->
-  <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="theme-color" content="#f5f2ea">
+  {%- if page.noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {%- endif %}
+
+  <title>{{ meta_title | escape }}</title>
+  <meta name="description" content="{{ meta_description | escape }}">
   <meta name="author" content="{{ site.author.name }}">
-  
-  <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-  <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <meta property="og:title" content="{{ meta_title | escape }}">
+  <meta property="og:description" content="{{ meta_description | escape }}">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:image" content="{{ '/Kusch_Qin_pic.jpg' | absolute_url }}">
-  
-  <!-- Twitter Card -->
+  <meta property="og:image" content="{{ site.social_image | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Xukui (Kusch) Qin — iOS Software Engineering and Applied AI Research">
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-  <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  
-  <!-- Canonical URL -->
+  <meta name="twitter:title" content="{{ meta_title | escape }}">
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+  <meta name="twitter:image" content="{{ site.social_image | absolute_url }}">
+  <meta name="twitter:image:alt" content="Xukui (Kusch) Qin — iOS Software Engineering and Applied AI Research">
+
   <link rel="canonical" href="{{ page.url | absolute_url }}">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬢</text></svg>">
-  
-  <!-- Stylesheets -->
+  <link rel="icon" type="image/jpeg" href="{{ '/Kusch_Qin_pic.jpg' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  
-  <!-- RSS Feed -->
-  {%- feed_meta -%}
-  
-  <!-- JSON-LD Structured Data -->
+  <script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>
+
+  {%- unless page.noindex %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,46 +52,59 @@
     "url": "{{ site.url }}",
     "sameAs": [
       "https://github.com/{{ site.github_username }}",
-      "https://linkedin.com/in/{{ site.linkedin_username }}"
+      "https://linkedin.com/in/{{ site.linkedin_username }}",
+      "https://scholar.google.com/citations?user={{ site.google_scholar_id }}"
     ],
-    "knowsAbout": ["Smart Home Security", "Artificial Intelligence", "iOS Development", "Computer Vision", "IoT"]
+    "knowsAbout": ["iOS Development", "Mobile Product Engineering", "Smart Home Technology", "Applied Artificial Intelligence", "Computer Vision"]
   }
   </script>
+  {%- endunless %}
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
-    <div class="wrapper">
-      <a class="site-title" href="#home">{{ site.author.name }}</a>
-      
-      <nav class="site-nav">
-        <a class="page-link" href="#home">Home</a>
-        <a class="page-link" href="#about">About</a>
-        <a class="page-link" href="#projects">Projects</a>
-        <a class="page-link" href="#publications">Publications</a>
-        <a class="page-link" href="#contact">Contact</a>
+    <div class="wrapper nav-shell">
+      <a class="site-title" href="{{ '/' | relative_url }}" aria-label="Kusch Qin, home">
+        <span class="site-monogram" aria-hidden="true">KQ</span>
+        <span>{{ site.author.name }}</span>
+      </a>
+
+      <nav class="site-nav desktop-nav" aria-label="Primary navigation">
+        <a class="page-link" href="{{ '/' | relative_url }}#work">Work</a>
+        <a class="page-link" href="{{ '/' | relative_url }}#experience">Experience</a>
+        <a class="page-link" href="{{ '/' | relative_url }}#research">Research</a>
+        <a class="page-link" href="{{ '/' | relative_url }}#about">About</a>
+        <a class="nav-cta" href="{{ '/' | relative_url }}#contact">Let's talk</a>
       </nav>
+
+      <details class="mobile-nav">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="{{ '/' | relative_url }}#work">Work</a>
+          <a href="{{ '/' | relative_url }}#experience">Experience</a>
+          <a href="{{ '/' | relative_url }}#research">Research</a>
+          <a href="{{ '/' | relative_url }}#about">About</a>
+          <a href="{{ '/' | relative_url }}#contact">Let's talk</a>
+        </nav>
+      </details>
     </div>
   </header>
 
-  <main class="page-content" aria-label="Content">
+  <main id="main-content" class="page-content" tabindex="-1">
     {{ content }}
   </main>
 
   <footer class="site-footer">
-    <div class="wrapper">
-      <div class="footer-col-wrapper">
-        <div>
-          <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
-        </div>
-        <div>
-          <a href="mailto:{{ site.email }}">Email</a> · 
-          <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a> · 
-          <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">LinkedIn</a>
-        </div>
+    <div class="wrapper footer-shell">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</p>
+      <div class="footer-links" aria-label="External links">
+        <a href="mailto:{{ site.email }}">Email</a>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user={{ site.google_scholar_id }}&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
       </div>
     </div>
   </footer>
 </body>
 </html>
-
